@@ -1,14 +1,19 @@
 let santaSprite = Class SantaSprite
 {
-  constructor(interval, baseAnimation, basePosition, positionCap, posAdditive, imageID)
+  constructor(interval, baseAnimation, baseXPosition, baseYPosition, positionCap, positionIncrement, imageID)
   {
     this._interval = interval;
     this._baseAnim = baseAnimation;
-    this._basePos = basePosition;
+    this._baseXPos = baseXPosition;
+    this._baseYPos = baseYPosition;
     this._posCap = positionCap;
-    this._posAdditive = posAdditive;
+    this._posIncrement = positionIncrement;
     this._image = imageID;
     this._tID;
+  }
+  var animate = function()
+  {
+    console.log(this._baseAnim, 'Animation Initializing...');
   }
 }
 
