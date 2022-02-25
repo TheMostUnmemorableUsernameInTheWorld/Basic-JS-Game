@@ -1,1 +1,14 @@
-
+[id^='sprite-']
+{
+  background-size: auto; 
+  zoom: 1.5; 
+  width: 96px; 
+  height: 96px; 
+  background-repeat: no-repeat; 
+  background-color: white;
+  display: none;
+}
+[id^='santa']
+{
+  background-image: url('SantaReaper.png'); 
+}
