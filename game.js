@@ -1,9 +1,18 @@
-var tID;
-
 let santaSprite = Class SantaSprite
 {
-  constructor(interval)
+  constructor(interval, baseAnimation, basePosition, positionCap, posAdditive, imageID)
   {
-    this.interval = interval; 
+    this._interval = interval;
+    this._baseAnim = baseAnimation;
+    this._basePos = basePosition;
+    this._posCap = positionCap;
+    this._posAdditive = posAdditive;
+    this._image = imageID;
+    this._tID;
   }
+}
+
+let changeSantaAnimation = function()
+{
+
 }
